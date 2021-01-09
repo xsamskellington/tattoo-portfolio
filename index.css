@@ -47,11 +47,7 @@ a:active{
     color: white;
 }
 
-@media (max-width: 673px){
-    li{
-        margin: 2%;
-    }
-}
+
 
 /*welcome section*/
 
@@ -132,18 +128,6 @@ h2{
     background-color: #FFA6C1;
 }
 
-@media (max-width: 673px){
-    
-    .project-div{
-        display: flex;
-        flex-direction: column;
-    }
-
-    img{
-       margin-left: 18%;
-    }
-}
-
 /*contact*/
 
 #contact{
@@ -181,18 +165,82 @@ h2{
     background-color: white;
 }
 
-@media (max-width: 673px){
-    .social-media{
-        display: flex;
-        flex-direction: column;
-    }
-
-}
-
 /*footer*/
 
 footer{
     text-align: center;
     text-transform: lowercase;
     margin-bottom: 1%;
+}
+
+@media (max-width: 480px){
+   body{
+        width: 100vw;
+        margin: 0%;
+        padding: 0%;
+   }
+
+   #navbar{
+       width: 100vw;
+       
+   }
+
+   #navlist{
+        justify-content: center;
+        position: relative;
+        width: 100%;
+    }
+
+   li{
+    font-size: small;
+    text-align: center;
+   }
+
+   #welcome-section h1{
+        text-align: center;
+   }
+
+   h2{
+    font-size: small;
+   }
+
+   .project-div{
+       display: block;
+   }
+
+   .project-tile{
+        margin: 15px;
+   }
+
+    img{
+        margin-left: auto;
+        margin-right: auto;    
+        display: block;
+        width: 100%;
+    }
+
+    .see-more{
+        font-size: smaller;
+        padding-right: 30px;
+        padding-left: 30px;
+        margin-left: 35%;
+    }
+
+    #contact{
+        display: block;
+    }
+
+    .social-media{
+            display: flex;  
+            flex-direction: column;
+            padding: 20px;
+            margin-bottom: 20px;
+            row-gap: 15px;
+       }
+
+       .h2-contact{
+           margin-top: 50px;
+       }
+
+
 }
